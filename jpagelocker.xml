@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.9" type="plugin" group="system" method="upgrade">
+    <name>plg_system_jpagelocker</name>
+    <author>Zoran Tanevski</author>
+    <creationDate>March 2020</creationDate>
+    <copyright>Copyright (C) 2020 Zoran Tanevski. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>zoran@tanevski.com</authorEmail>
+    <authorUrl>https://tanevski.com</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_JPAGELOCKER_DESCRIPTION</description>
+    <files>
+        <filename plugin="jpagelocker">jpagelocker.php</filename>
+        <filename>layout.php</filename>
+        <filename>LICENSE.txt</filename>
+        <folder>assets</folder>
+        <folder>fields</folder>
+    </files>
+    <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.plg_system_jpagelocker.ini</language>
+        <language tag="en-GB">en-GB.plg_system_jpagelocker.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/plugins/system/jpagelocker/fields">
+                <field type="plgscript" />
+
+                <field type="spacer" name="menus_spacer" label="&lt;b&gt;Menu items &amp; password:&lt;/b&gt;" />
+                
+                <field name="locked_items" type="menuitem" default="0" label="Menu items" description="Select menu items to lock" multiple="true" required="true">
+                    <option value="">Select menu items</option>
+                </field>
+                <field name="locking_password" type="passfieldwithtoggler" default="" label="Enter a password" description="Set a locking password." required="true" />
+
+                <field type="spacer" name="appearance_spacer" label="&lt;b&gt;Page elements:&lt;/b&gt;" />
+
+                <field name="page_title" type="text" default="Restricted access!" label="Page title" description="You can set the page title here." size="100" />
+                <field name="submit_button_text" type="text" default="Submit" label="Submit button text" description="You can set the submit button text here." size="50" />
+                <field name="submit_button_background" type="color" default="#7e2121" format="hex" label="Button background color" description="Choose your button background color" />
+
+                <field type="spacer" name="appearance_spacer" label="&lt;b&gt;Appearance of the locked page:&lt;/b&gt;" />
+
+                <field name="font_size" type="number" default="16" label="Font size" description="Enter your desired font size." min="12" max="30" step="1" />
+                <field name="text_color" type="color" default="#141414" format="hex" label="Text color" description="Choose your text color" />
+                <field name="font_family" type="text" default="Helvetica, Arial, sans-serif" label="Font family" description="You can enter your font-family stack here." size="100" />
+                <field name="background_color" type="color" default="#ff4342" format="hex" label="Background color" description="Choose your body background color" />
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
