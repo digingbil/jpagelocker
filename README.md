@@ -3,7 +3,7 @@ A simple joomla plugin for password locking pages
 
 Requirements:
 -------------
-The plugin is tested only on Jooml! 3.9+ with PHP version 7.3+ and 7.4+. I cannot guarantee that it will work on anything else.
+The plugin is tested only on Joomla! 3.9+ with PHP version 7.3+ and 7.4+. I cannot guarantee that it will work on anything else.
 
 Installation:
 -------------
