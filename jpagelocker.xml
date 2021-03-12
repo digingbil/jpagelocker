@@ -12,7 +12,8 @@
     <files>
         <filename plugin="jpagelocker">jpagelocker.php</filename>
         <filename>layout.php</filename>
-        <filename>LICENSE.txt</filename>
+        <filename>LICENSE</filename>
+        <filename>README.md</filename>
         <folder>assets</folder>
         <folder>fields</folder>
     </files>
