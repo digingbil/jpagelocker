@@ -1,4 +1,4 @@
-# jpagelocker
+# JPageLocker
 A simple joomla plugin for password locking pages
 
 Requirements:
